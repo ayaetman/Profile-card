@@ -1,0 +1,98 @@
+body {
+  background-color: hsla(229, 25%, 35%, 0.632);
+  /*background-image: url(../images/bg-pattern-top.svg);*/
+  background-image: url(../images/bg-pattern-bottom.svg);
+  font-family: "Fraunces", serif;
+  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  animation: move 10s linear infinite;
+  position: relative;
+}
+@keyframes move {
+  0% {
+    background-image: url(../images/bg-pattern-bottom.svg);
+  }
+  50% {
+    background-color: hsl(185, 75%, 39%);
+  }
+  75% {
+    background-image: url(../images/bg-pattern-bottom.svg);
+  }
+  100% {
+    background-color: hsl(227, 10%, 46%);
+    background-image: url(../images/bg-pattern-top.svg);
+  }
+}
+.container {
+  margin: 300px 500px;
+  background-color: white;
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  text-align: center;
+  height: 380px;
+}
+@media (max-width: 767px) {
+  .container {
+    margin: 0;
+  }
+}
+.container .image img {
+  display: block;
+  border-radius: 10px 53px 0 0;
+}
+.container .content {
+  display: flex;
+  flex-direction: column;
+}
+.container .content .profile {
+  border: 9px solid white;
+  border-radius: 50%;
+  /* position: absolute; */
+  top: 95px;
+  display: block;
+  /* margin: -17px; */
+  margin: -17px auto 11px;
+}
+.container .content .name {
+  display: inline;
+  font-size: 21px;
+  font-weight: bold;
+}
+.container .content .age {
+  padding-left: 5px;
+  color: hsl(0, 0%, 59%);
+  font-size: 19px;
+}
+.container .content .city {
+  padding: 5px;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 10px;
+}
+.container .content .follwers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.container .content .numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+.container .content .numbers .number {
+  padding: 6px 32px;
+}
+.container .content .numbers .number .num {
+  font-weight: bold;
+  font-size: 18px;
+}
+.container .content .numbers .number .type {
+  color: hsl(0, 0%, 59%);
+  font-size: 13px;
+}
